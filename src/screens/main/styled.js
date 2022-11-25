@@ -20,7 +20,8 @@ export const Card = styled.View`
     cardWidth ? `${cardWidth}px` : `${cardSizes.MAIN_CARD_WIDTH}px`};
   align-items: center;
   justify-content: center;
-  padding-horizontal: ${scale(50)}px;
+  padding-horizontal: ${scale(20)}px;
+  border-radius: ${scale(10)}px;
 `;
 
 export const ImageContainer = styled.Image`
@@ -32,11 +33,13 @@ export const ImageContainer = styled.Image`
 
 export const Heading = styled(Text).attrs(() => ({
   variant: TEXT_VARIANTS.H4,
-  lineHeight: 20,
+  lineHeight: 30,
   textAlign: 'center',
+  fontSize: 20
 }))`
   align-self: center;
   color: ${({theme}) => theme.color.gray};
+  font-weight: 500;
 `;
 
 export const ButtonText = styled(Text).attrs(() => ({
